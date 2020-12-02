@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Address Query</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/StyleSheet.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Totally Not Stressful Forecast</h1>
+
+    <h4 class="bob-ross-quote-1"> “Anytime you learn, you gain.” - Bob Ross</h4>
+
+    <p class="app-info">Enter your address in the appropriate form boxes. Upon submission, you'll receive a 7-day day/night forecast.</p>
+
+    <div class="address-container">
+        <form method="post" asp-action="Forecast" role="form">
+            <div class="form-group">
+                <label>Street</label>
+                <input class="form-control" name="street" />
+            </div>
+            <div class="form-group">
+                <label>City</label>
+                <input class="form-control" name="city" />
+            </div>
+            <div class="form-group">
+                <label>State</label>
+                <input class="form-control" name="state" />
+            </div>
+            <div class="form-group">
+                <label>Zip</label>
+                <input class="form-control" name="zip" />
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

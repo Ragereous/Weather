@@ -1,0 +1,112 @@
+﻿/* General and Index/Form Styling */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Vesper Libre', serif;
+    background-color: darkgray;
+}
+
+.address-container {
+    width: 750px;
+    height: auto;
+    margin: auto;
+    margin-top: 1%;
+    border-style: solid;
+    border-color: black;
+}
+
+form {
+    padding: 28px;
+    background-color: cornflowerblue;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2.5rem;
+}
+
+.forecast-title {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.bob-ross-quote-1 {
+    margin: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+.app-info {
+    padding: 21px;
+    background-color: cornflowerblue;
+    width: 750px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    margin-top: 1%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+/* Forecast Styling */
+
+.single-forecast-container {
+    padding: 3px;
+    border-style: solid;
+    border-color: black;
+    background-image: linear-gradient(rgb(209, 208, 208), dimgray);
+}
+
+.forecast-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-color: black;
+    padding: 16px;
+    padding-right: 32px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.forecast-icon {
+    border-style: solid;
+    border-color: cornflowerblue;
+}
+
+.forecast-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.forecast-detailed-info {
+    background-color: rgb(91, 91, 91);
+    border-style: solid;
+    border-color: black;
+    margin: 16px;
+    padding: 16px;
+}
+
+.forecast-temp {
+    font-size: 18px;
+}
+
+p {
+    margin: 0px;
+}

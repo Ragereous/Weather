@@ -1,0 +1,35 @@
+﻿@model QuickType.Forecast
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Totally Not Stressful Forecast</title>
+    <link href="~/lib/twitter-bootstrap/css/StyleSheet.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="forecast-title">Totally Not Stressful Forecast</h1>
+
+    <div class="forecast-container container">
+        @foreach (var result in Model.Properties.Periods)
+        {
+            <div class="single-forecast-container">
+                <p class="forecast-name">@result.Name</p>
+                <br />
+                <img class="forecast-icon" src="@result.Icon"/>
+                <br />
+                <p class="forecast-temp">@result.Temperature @result.TemperatureUnit</p>
+                <br />
+                <p class="forecast-detailed-info">@result.DetailedForecast</p>
+            </div>
+        }
+    </div>
+</body>
+</html>
